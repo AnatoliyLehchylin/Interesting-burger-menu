@@ -1,0 +1,156 @@
+
+body {
+  width: 100%;
+  box-sizing: border-box;
+  font-family: Roboto, sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+
+  @media (max-width: 1200px) {
+    width: 100%;
+    max-width: 768px;
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+    max-width: 320px;
+    position: relative;
+  }
+}
+
+.navbar {
+  @include dispFlexCenter;
+  margin: 45px auto 51px auto;
+
+  @media (max-width: 1200px) {
+    margin: 41px auto 43px auto;
+  }
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+.navbar__link {
+  margin-right: 68px;
+  cursor: pointer;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 22px;
+  font-style: normal;
+
+  color: $primaryColor;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:hover {
+    color: $hoverColor;
+  }
+
+  @media (max-width: 1200px) {
+    margin-right: 34px;
+  }
+}
+
+.burger-wrap {
+  @include dispFlexEnd;
+}
+
+.burger-menu {
+  display: none;
+
+  &.active {
+    padding: 0 9.25px 0 16.25px;
+  }
+
+  &.active .line1 {
+    transform: rotate(-315deg);
+    //transform: rotate(45deg);
+  }
+
+  &.active .line2 {
+    transform: translateX(35px);
+  }
+
+  &.active .line3 {
+    transform: rotate(315deg);
+    //transform: rotate(-45deg);
+  }
+
+  @media (max-width: 768px) {
+    @include dispFlexCenter;
+    flex-direction: column;
+    height: 37px;
+    margin: 23px 0;
+    padding: 0 12.75px;
+    background-color: black;
+  }
+}
+
+.line {
+  width: 18.5px;
+  height: 3px;
+  background-color: white;
+  margin-bottom: 3.5px;
+  transform-origin: left;
+  transition: all 0.6s;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.burger-navbar-wrap {
+  @include dispFlexEnd;
+  position: absolute;
+  border: 1px solid red;
+}
+
+.burger-navbar {
+  display: none;
+  width: 182px;
+  height: 208px;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  background-color: #F5F5F5;
+
+  &.active {
+    display: block;
+  }
+}
+
+.burger-navbar__link {
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 22px;
+  font-style: normal;
+  padding: 5px 0 2.5px 12px;
+  cursor: pointer;
+
+  color: $primaryColor;
+
+  &:hover {
+    color: $hoverColor;
+    background-color: #e5e5e5;
+  }
+}
+
+.header-img {
+  width: 100%;
+  margin: 0 auto 66px;
+
+  @media (max-width: 1200px) {
+    margin: 0 auto 56px;
+  }
+
+  @media (max-width: 768px) {
+    margin: 0 auto 38px;
+  }
+}

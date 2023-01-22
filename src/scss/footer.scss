@@ -1,0 +1,60 @@
+.footer {
+  background-color: #000000;
+  padding: 70px 0;
+
+  @media (max-width: 1200px) {
+    padding: 56px 0;
+  }
+
+  @media (max-width: 768px) {
+    padding: 38px 0 47px 0;
+  }
+}
+
+.footer-title {
+  color: #FEFEFE;
+  text-align: center;
+  margin-bottom: 22px;
+}
+
+.footer-text {
+  color: $footerColor;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: center;
+  margin-bottom: 37px;
+
+  @media (max-width: 768px) {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-top: 8px;
+    margin-bottom: 26px;
+  }
+}
+
+.footer-icon {
+  @include dispFlexCenter;
+  gap: 6px;
+  margin-bottom: 34px;
+
+  .icon-img {
+    width: 34px;
+    height: 34px;
+    cursor: pointer;
+  }
+}
+
+.contacts {
+  color: $footerColor;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: center;
+
+  @media ( max-width:678px) {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}

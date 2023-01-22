@@ -1,0 +1,14 @@
+@mixin dispFlexCenter {
+  display: flex;
+  justify-content: center;
+}
+
+@mixin dispFlexSpaceBetween {
+  display: flex;
+  justify-content: space-between;
+}
+
+@mixin dispFlexEnd {
+  display: flex;
+  justify-content: flex-end;
+}
