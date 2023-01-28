@@ -15,6 +15,9 @@ const buildCss = () => {
     return gulp
         .src('./src/scss/style.scss')
         .pipe(sass({ outputStyle: 'compressed'}))
+        // .pipe(sass({
+        //     outputStyle: 'compressed'
+        // }).on('error', sass.logError))
         .pipe(
             autoprefixer({
                 overrideBrowserslist: ['last 2 versions'],
