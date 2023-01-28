@@ -53,7 +53,7 @@ body {
   margin-right: 0;
 }
 .navbar__link:hover {
-  color: #57A4A4;
+  color: #a97575;
 }
 @media (max-width: 1200px) {
   .navbar__link {
